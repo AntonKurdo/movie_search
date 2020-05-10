@@ -227,7 +227,25 @@ footer i {
 }
 
 
+@media screen and (max-width: 1000px) {
+    header img {
+        display: none;
+    }
+    .keyboard {
+        display: none;
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel {
+        width: 820px;
+    }
+}
 @media screen and (max-width: 800px) {
+    header img {
+        display: none;
+    }
     .keyboard {
         display: none;
     }
