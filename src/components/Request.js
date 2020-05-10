@@ -1,3 +1,6 @@
+import notify from "./notification";
+
+
 export default function request(slider, str = 'spider') {
     const btnClean = document.querySelector('.clean_inp');
     const loading = document.querySelector('.search-input_cont img');
@@ -5,9 +8,10 @@ export default function request(slider, str = 'spider') {
     const url = `https://www.omdbapi.com/?s=${str}&apikey=39a13229`;
     btnClean.style.display = 'none';
     loading.style.display = 'inline-block';
-    fetch(url).then(res => {
+    fetch(url).then(res => {       
         return res.json();
     }).then(res => {
+       if(res.Response === 'True') {
         res.Search.forEach(one => {
             fetch(`https://www.omdbapi.com/?i=${one.imdbID}&apikey=39a13229`).then(rate => {
                 return rate.json();
@@ -29,5 +33,12 @@ export default function request(slider, str = 'spider') {
                 btnClean.style.display = 'block';
             })
         })
+     } else {
+        document.querySelector('.notif').innerHTML = '';
+        let flag = 'wrong request';
+        notify(str, flag)            
+        loading.style.display = 'none';
+        btnClean.style.display = 'block';
+     }
     })
 }

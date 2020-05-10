@@ -24,17 +24,15 @@ searchField.addEventListener('keydown', (e) => {
 
 searchField.addEventListener('input', () => {
      const notificationCont = document.querySelector('.notif')
+     if(notificationCont) {
      notificationCont.classList.add('opacityClass')
      setTimeout(() => {
           notificationCont.remove();
      }, 1200)
-
-
-
-
-
-
+}
 })
+
+
 btnSearch.addEventListener('click', () => {
      filter(encodeURI(searchField.value));
 })
@@ -54,3 +52,4 @@ btnKeyboard.addEventListener('click', () => {
 })
 
 filter();
+

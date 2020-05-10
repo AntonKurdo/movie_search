@@ -260,6 +260,10 @@ footer i {
 
 @media screen and (max-width: 400px) {
     .cards {
+        margin-top: 50px;
+    
+    }
+    .cards {
         display: flex;
         justify-content: center;
     }
