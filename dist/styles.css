@@ -5,7 +5,6 @@ header {
     color: white;
 }
 
-
 header img {
     width: 45px;
     margin-right: 12px;
@@ -108,15 +107,17 @@ header h2:hover {
 }
 
 .notif i {
-    color:  #dc3545;
+    color: #dc3545;
     font-size: 18px;
 }
+
 .notif span {
-    color:  #dc3545;
+    color: #dc3545;
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
 }
+
 .opacityClass {
     opacity: 0;
 }
@@ -130,6 +131,7 @@ header h2:hover {
     display: flex;
     justify-content: center;
     position: relative;
+
 }
 
 .carousel__container {
@@ -146,7 +148,6 @@ header h2:hover {
 
 .card:hover {
     cursor: pointer;
-
 }
 
 .card:last-of-type {
@@ -157,14 +158,16 @@ header h2:hover {
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     height: 35px;
     font-size: 16px;
 }
+
 .card-title a {
     color: gray;
 }
-.card-title a:hover{
+
+.card-title a:hover {
     color: #dc3545;
 }
 
@@ -224,7 +227,28 @@ footer i {
 }
 
 
+@media screen and (max-width: 800px) {
+    .keyboard {
+        display: none;
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel {
+        width: 530px;
+    }
+}
 
+@media screen and (max-width: 400px) {
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel {
+        width: 240px;
+    }
+}
 /*!
  * 
  *   simple-keyboard v2.29.19
