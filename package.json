@@ -1,0 +1,25 @@
+{
+  "name": "speakit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack-dev-server",
+    "build": "webpack --mode production"
+  },
+  "author": "Anton Kurdo",
+  "license": "ISC",
+  "dependencies": {
+    "simple-keyboard": "^2.29.19",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.4.1",
+    "css-loader": "^3.5.2",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

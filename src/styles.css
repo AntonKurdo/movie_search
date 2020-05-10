@@ -1,0 +1,226 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+}
+
+
+header img {
+    width: 45px;
+    margin-right: 12px;
+}
+
+header img:hover,
+header h2:hover {
+    cursor: pointer;
+}
+
+.search_field {
+    margin-top: 50px;
+}
+
+.search-input_cont {
+    position: relative;
+    width: 100%;
+}
+
+.search-input {
+    padding-left: 10px;
+    width: 100%;
+    height: 39px;
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+.clean_inp {
+    position: absolute;
+    right: 110px;
+    top: 0;
+    color: #635e5e;
+    font-size: 26px;
+}
+
+.clean_inp:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.clean_inp:active {
+    color: #dc3545;
+
+}
+
+.keyboard {
+    position: absolute;
+    color: #635e5e;
+    right: 150px;
+    top: 0;
+    font-size: 26px;
+}
+
+.keyboard:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.keyboard:active {
+    color: #dc3545;
+}
+
+.simple-keyboard {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    display: none;
+    transition: all .3s linear;
+}
+
+.search-input_cont img {
+    display: block;
+    position: absolute;
+    width: 37px;
+    right: 105px;
+    top: 0;
+    animation: rotate 1.2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
+}
+
+.btn-search {
+    width: 100px;
+    position: absolute;
+    right: -2px;
+    border-radius: 0 5px 5px 0;
+}
+
+.notif {
+    position: absolute;
+    color: gray;
+    opacity: 0.8;
+    font-size: 12px;
+    transition: all .7s linear;
+    font-style: italic;
+}
+
+.notif i {
+    color:  #dc3545;
+    font-size: 18px;
+}
+.notif span {
+    color:  #dc3545;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.opacityClass {
+    opacity: 0;
+}
+
+.cards {
+    margin-top: 70px;
+
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel__container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card {
+    min-width: 240px;
+    margin-right: 50px;
+    transition: all .3s linear;
+}
+
+.card:hover {
+    cursor: pointer;
+
+}
+
+.card:last-of-type {
+    margin-right: 0;
+}
+
+.card-title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 35px;
+    font-size: 16px;
+}
+.card-title a {
+    color: gray;
+}
+.card-title a:hover{
+    color: #dc3545;
+}
+
+.card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-text {
+    text-align: center;
+    font-style: italic;
+}
+
+.fa-star {
+    color: #fdd835;
+}
+
+.btn-controll-slider {
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    color: #808080;
+}
+
+.btn-controll-slider:hover {
+    cursor: pointer;
+}
+
+.btn-controll-slider:active {
+    color: #dc3545;
+}
+
+.btn-left {
+    left: -15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.footer a {
+    color: white;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    font-size: 17px;
+    margin-top: 13px;
+}
+
+footer i {
+    font-size: 25px;
+}
+
+

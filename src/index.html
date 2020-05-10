@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MovieSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <img onclick={location.reload()} src="https://www.pngmart.com/files/5/Movie-PNG-Transparent-Image.png" alt="">
+        <h2 onclick={location.reload()}>MovieSearch</h2>
+    </header>
+    <div class="container">
+        <div class="search_field">
+            <div class="search-input_cont">
+                <input type="text" class='search-input' placeholder="🔎 Search here..." autofocus autocomplete="off">
+                <img src="https://faviconer.net/img/favicons/favicon-194x194.png" alt="loading">
+                <div class="keyboard"><i class="fas fa-keyboard"></i></div>
+                <div class='clean_inp'><i class="fas fa-times"></i></div>
+                <button class='btn btn-danger btn-search'>Search</button>              
+            </div>
+            
+        </div>
+
+        <div class="cards">
+            <div class="carousel">
+                <div class="carousel__container"> </div>
+                <div class="btnWrap">
+                    <i  class="btn-controll-slider btn-left fas fa-angle-left"></i>
+                    <i class="btn-controll-slider btn-right fas fa-angle-right"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    
+    <footer>
+        <div class="footer container">
+            <div>RS School 2020q1</div>
+            <a target='blank' href='https://github.com/AntonKurdo'><i class="fab fa-github"></i> AntonKurdo </a>
+        </div>
+    </footer>
+    <div class="simple-keyboard"></div>
+    <script src="index.js"></script>
+
+    <script src="redux.js"></script>
+
+
+
+</body>
+
+</html>
