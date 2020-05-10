@@ -2,7 +2,7 @@ export default function request(slider, str = 'spider') {
     const btnClean = document.querySelector('.clean_inp');
     const loading = document.querySelector('.search-input_cont img');
     let html = document.querySelector('.carousel__container');
-    const url = `http://www.omdbapi.com/?s=${str}&apikey=39a13229`;
+    const url = `https://www.omdbapi.com/?s=${str}&apikey=39a13229`;
     btnClean.style.display = 'none';
     loading.style.display = 'inline-block';
     fetch(url).then(res => {
